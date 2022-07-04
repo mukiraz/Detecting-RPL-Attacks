@@ -31,13 +31,23 @@ The following steps have been followed to use these codes.
 
 With Contiki Cooja, we had 2 data sets created from the simulation with the weak node with the raw data set obtained from the simulation with normal nodes in the RPL Protocol. These two data sets will also have the following columns. 
 
+**Source**
+
 ![Source](https://en.mukiraz.com/wp-content/uploads/2022/07/Source.png)
+
+**Destination**
 
 ![Destination](https://en.mukiraz.com/wp-content/uploads/2022/07/Destination.png)
 
+**Protocol**
+
 ![Protocol](https://en.mukiraz.com/wp-content/uploads/2022/07/Protocol.png)
 
+**Length**
+
 ![Length](https://en.mukiraz.com/wp-content/uploads/2022/07/Length.png)
+
+**Info**
 
 ![Info](https://en.mukiraz.com/wp-content/uploads/2022/07/Info.png)
 

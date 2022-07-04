@@ -4,8 +4,16 @@ Created on Fri Feb 19 11:42:08 2021
 
 These codes were created for my master's thesis "Comparison of Machine Learning Algorithms to Detect RPL-Based IoT Devices Vulnerability".
 
-The codes, gets the CSV file, 
-This codes are used while 
+See README file for details.
+
+Basically, the program gets the RAW data of RPL network packets with this columns:
+
+No 	|	Time 	|	Source	|	Destination	|	Protocol 	Length	|	Info
+
+Then it splits the dataset into 1 second frames.
+For each frame it calculates the columns below:
+
+second | src | dst | packetcount | src_ratio | dst_ratio | src_duration_ratio | dst_duration_ratio | TotalPacketDuration | TotalPacketLenght | src_packet_ratio | dst_packet_ratio | DioCount | DisCount | DaoCount | OtherMsg | label
 
 
 @author: Murat Ugur KIRAZ
