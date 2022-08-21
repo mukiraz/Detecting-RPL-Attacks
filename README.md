@@ -156,13 +156,26 @@ AR = (TP +FP) / (TP + FP + TN + FN)
 After the experiments are executed, the number of rows of data sets for Overflow attack, Version Number Boost Attack, Reduced Rank Attack, accuracy rate and training time values are shown in the table below. After training the data set with machine learning algorithms, of course, the detection of the error rate will take a shorter time. However, in this thesis study, it is aimed to analyze the data sets of the same attacks with different machine learning algorithms and to determine the fastest, most effective, uncomplicated and reliable algorithm among these algorithms. Therefore, the algorithm that performs the training in a shorter time and can detect the attack with high accuracy will be more cost-effective. The results of the attacks are interpreted below.
 
 
-| Attack Type  | Data Set Row Count | Test and Training Data Set Row Count | Algorithm | Accuracy Rate(%) | Training Time (ms) |
+| 1  | 2 | 3 | 4 | 5 | 6 |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Flooding Attacks (Hello Flood Attack) | B:214 <br> M:1259 <br> S:1473 | B:214 <br> M:214 <br> S:428 | Logistic Regression <br> Decision Trees <br> Random Forest <br> Naive Bayes <br> K Nearest Neighbor <br> Artificial Neural Networks | 95,7 <br> 93,6 <br> 95,0 <br> 69,7 <br> 95,7 <br> 97,2 | 363 <br> 0 <br> 168 <br> 13 <br> 4 <br> 1847 |
 | Version Number Increase Attack | B:168 <br> M:1114 <br> S:1282 | B:168 <br> M:168 <br> S:336 | Logistic Regression <br> Decision Trees <br> Random Forest <br> Naive Bayes <br> K Nearest Neighbor <br> Artificial Neural Networks | 74,8 <br> 74,8 <br> 72,9 <br> 74,8 <br> 81,0 <br> 72,0 | 185 <br> 2 <br> 253 <br> 5 <br> 2 <br> 1688 |
 | Decreased Rank Attack | B:160 <br> M:151 <br> S:311 | B:151 <br> M:151 <br> S:302 | Logistic Regression <br> Decision Trees <br> Random Forest <br> Naive Bayes <br> K Nearest Neighbor <br> Artificial Neural Networks | 54,0 <br> 57,0 <br> 58,0 <br> 54,0 <br> 56,0 <br> 58,0 | 5 <br> 2 <br> 10 <br> 1 <br> 0 <br> 1720 |
 
+### Table Columns
 
+1. Attack Type
+2. Data Set Row Count
+3. Test and Training Data Set Row Count
+4. Algorithm
+5. Accuracy Rate (%)
+6. Training Time (ms)
+
+## Table Synonyms
+
+**B:** Dataset with benign motes row count 
+**M:** Dataset with malicious motes row count
+**S:** Sum of the row counts
 
 
 
