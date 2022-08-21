@@ -158,10 +158,7 @@ After the experiments are executed, the number of rows of data sets for Overflow
 
 | Attack Type  | Data Set Row Count | Test and Training Data Set Row Count | Algorithm | Accuracy Rate(%) | Training Time (ms) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Flooding Attacks (Hello Flood Attack) | B:214  M:1259  S:1473 | B:214  M:214  S:428 | * Logistic Regression | * 95,7 | * 363 |
-|  |  |  | * Decision Trees      | * 93,6 | * 0 |
-|  |  |  | * Random Forest       | * 95,0 | * 168 |
-|  |  |  | * Navie Bayes         | * 69,7 | * 13 |
-|  |  |  | * K Nearest Neighbor  | * 95,7 | * 4 |
-|  |  |  | * Artificial Neural Networks | * 97,2 | * 1847 |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Flooding Attacks (Hello Flood Attack) | B:214  M:1259  S:1473 | B:214  M:214  S:428 | Logistic Regression <br> Decision Trees <br> Random Forest <br> Naive Bayes <br> K Nearest Neighbor <br> Artificial Neural Networks | 95,7 <br> 93,6 <br> 95,0 <br> 69,7 <br> 95,7 <br> 97,2 <br> | 363 <br> 0 <br> 168 <br> 13 <br> 4 <br> 1847 <br>  |
+
+
+
