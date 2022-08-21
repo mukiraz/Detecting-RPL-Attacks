@@ -129,9 +129,39 @@ The data sets created for each attack and classified as vulnerable-normal have b
 
 The data sets created for each attack and classified as vulnerable-normal have become ready to be compared with different machine learning algorithms. As a result, a total of 3 data sets were created: Overflow Attacks data set, Reduced Rank attacks data set and Version Number Boost Attacks data set.
 
+## Analysis of the Made Sense Data Set with Machine Learning
 
 
+The raw data sets were made meaningful and classified as normal and vulnerable. Even before machine learning was performed, an equal amount of rows were taken from normal and vulnerable data sets. For this, the number of rows of the data set with the least number of rows from the normal or vulnerable data sets obtained from the 60th second was taken as the basis, and the same amount of sales was taken from the other data set. Thus, it is aimed to obtain a balanced amount of data. Source and destination IP addresses are extracted from the datasets before the normalization process so that the machine does not learn whether there is an attack based on the source and destination IP addresses. Subsequently, the data were normalized. The normalization process of the test has been done with the StandardScaler library in python.
+
+Subsequently, the dataset was split into test and training datasets in the amount of 2/3. (2/3 training, 1/3 testing).
+
+After this stage, the data sets will be trained and tested with different machine learning algorithms and the most appropriate machine learning algorithm to be used in the detection of Flooding, Version Number Increase and Decreased Rank Attacks will be determined in the RPL protocol. For this purpose, six types of machine learning algorithms were tested. These are the algorithms Logistic Regression Classification, Decision Trees, Random Forest, Navie Bayes, KNN Classifier and Artificial Neural Networks.The parameters applied to machine learning are shown in Table-3.4.
 
 
+| Algorithm  | Parameter |
+| ------------- | ------------- |
+| **Logistic Regression** | **Library:** sklearn.linear_model, LogisticRegression.  The existing parameters of the library are used. |
+| **Random Forest** | **Library:** sklearn.ensemble, RandomForestClassifier.  **Parameters:** n_estimators=8, criterion='entropy' |
+| **Decision Trees** | **Library:** sklearn.tree, DecisionTreeClassifier.  **Parameters:** criterion='entropy' |
+| **Navie Bayes** | **Library:** sklearn.naive_bayes, GaussianNB.  The existing parameters of the library are used. |
+| **KNN Classifier** | Library: sklearn.neighbors, KNeighborsClassifier.  The existing parameters of the library are used. |
+| **Artificial Neural Networks** | **Library:** tensorflow, keras.  A 6-layer structure was applied. Neron numbers:26,52,56,13,7,1 Optimizer:"Nadam"; Again:60; Estimate threshold:0.7  |
+
+After the execution of the experiments, the accuracy rate and training time will be compared on the values.
+The accuracy rate (AR) is calculated as below, and TP is True Positive, TN is True Negative, FP is False Positive, and FN is False Negative.
+
+AR = (TP +FP) / (TP + FP + TN + FN)
+
+After the experiments are executed, the number of rows of data sets for Overflow attack, Version Number Boost Attack, Reduced Rank Attack, accuracy rate and training time values are shown in the table below. After training the data set with machine learning algorithms, of course, the detection of the error rate will take a shorter time. However, in this thesis study, it is aimed to analyze the data sets of the same attacks with different machine learning algorithms and to determine the fastest, most effective, uncomplicated and reliable algorithm among these algorithms. Therefore, the algorithm that performs the training in a shorter time and can detect the attack with high accuracy will be more cost-effective. The results of the attacks are interpreted below.
 
 
+| Attack Type  | Data Set Row Count | Test and Training Data Set Row Count | Algorithm | Accuracy Rate(%) | Training Time (ms) |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Flooding Attacks (Hello Flood Attack) | B:214  M:1259  S:1473 | B:214  M:214  S:428 | * Logistic Regression | * 95,7 | * 363 |
+|                                       |                       |                     |	* Decision Trees      | * 93,6 | * 0 |
+|                                       |                       |                     |	* Random Forest       | * 95,0 | * 168 |
+|                                       |                       |                     |	* Navie Bayes         | * 69,7 | * 13 |
+|                                       |                       |                     |	* K Nearest Neighbor  | * 95,7 | * 4 |
+|                                       |                       |                     |	* Artificial Neural Networks | * 97,2 | * 1847 |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
