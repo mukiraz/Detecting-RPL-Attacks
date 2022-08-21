@@ -171,7 +171,7 @@ After the experiments are executed, the number of rows of data sets for Overflow
 5. Accuracy Rate (%)
 6. Training Time (ms)
 
-## Table Synonyms
+### Table Synonyms
 
 **B:** Dataset with benign motes row count 
 **M:** Dataset with malicious motes row count
