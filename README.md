@@ -158,7 +158,11 @@ After the experiments are executed, the number of rows of data sets for Overflow
 
 | Attack Type  | Data Set Row Count | Test and Training Data Set Row Count | Algorithm | Accuracy Rate(%) | Training Time (ms) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Flooding Attacks (Hello Flood Attack) | B:214  M:1259  S:1473 | B:214  M:214  S:428 | Logistic Regression <br> Decision Trees <br> Random Forest <br> Naive Bayes <br> K Nearest Neighbor <br> Artificial Neural Networks | 95,7 <br> 93,6 <br> 95,0 <br> 69,7 <br> 95,7 <br> 97,2 <br> | 363 <br> 0 <br> 168 <br> 13 <br> 4 <br> 1847 <br>  |
+| Flooding Attacks (Hello Flood Attack) | B:214 <br> M:1259 <br> S:1473 | B:214 <br> M:214 <br> S:428 | Logistic Regression <br> Decision Trees <br> Random Forest <br> Naive Bayes <br> K Nearest Neighbor <br> Artificial Neural Networks | 95,7 <br> 93,6 <br> 95,0 <br> 69,7 <br> 95,7 <br> 97,2 | 363 <br> 0 <br> 168 <br> 13 <br> 4 <br> 1847 |
+| Version Number Increase Attack | B:168 <br> M:1114 <br> S:1282 | B:168 <br> M:168 <br> S:336 | Logistic Regression <br> Decision Trees <br> Random Forest <br> Naive Bayes <br> K Nearest Neighbor <br> Artificial Neural Networks | 74,8 <br> 74,8 <br> 72,9 <br> 74,8 <br> 81,0 <br> 72,0 | 185 <br> 2 <br> 253 <br> 5 <br> 2 <br> 1688 |
+| Decreased Rank Attack | B:160 <br> M:151 <br> S:311 | B:151 <br> M:151 <br> S:302 | Logistic Regression <br> Decision Trees <br> Random Forest <br> Naive Bayes <br> K Nearest Neighbor <br> Artificial Neural Networks | 54,0 <br> 57,0 <br> 58,0 <br> 54,0 <br> 56,0 <br> 58,0 | 5 <br> 2 <br> 10 <br> 1 <br> 0 <br> 1720 |
+
+
 
 
 
