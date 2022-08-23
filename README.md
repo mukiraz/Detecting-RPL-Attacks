@@ -122,7 +122,7 @@ START
 	ENDWHILE
 END
 ```
-The python codes of this pseudocode  are contained in the IoT_Dataset.py file.
+The python codes of this pseudocode  are contained in the Making_Data_Meaningful.py file.
 
 During the simulation, it was observed that a system consisting of 12 nodes fully formed the DODAG structure after the 30th second. Due to the nature of RPL, when DODAG is occurring, devices will send DIO, DAO, and DAO-ACK messages to each other, and packet traffic will be different from the traffic after DODAG occurs. In order to prevent this difference from being learned by the machine, the data after the 60th second of the raw data set is taken and the new data set is created. 
 The data sets created for each attack and classified as vulnerable-normal have become ready to be compared with different machine learning algorithms. As a result, a total of 3 data sets were created: Overflow Attacks data set, Reduced Rank attacks data set and Version Number Boost Attacks data set.
