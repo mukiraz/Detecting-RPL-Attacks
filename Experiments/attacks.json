@@ -1,0 +1,40 @@
+{
+  "BASE": {
+    "simulation": {
+      "number-motes": 20,
+      "target": "z1",
+      "duration": 120,
+      "area-square-side":500}},
+  "hello-flood": {
+    "simulation": {
+      "title": "Test hello-flood simulation",
+      "goal": "Create a new simulation",
+      "root": "echo"},
+    "malicious": {
+      "type": "sensor",
+      "building-blocks": [
+        "hello-flood"
+      ]}},
+  "increased-version": {
+    "simulation": {
+      "title": "Test increased-version simulation",
+      "goal": "Create a new simulation",
+      "root": "echo"
+    },
+    "malicious": {
+      "type": "sensor",
+      "building-blocks": [
+        "increased-version"
+      ]
+    }
+  },
+  "decreased-rank": {
+    "simulation": {
+      "title": "Test decreased-rank simulation",
+      "goal": "Create a new simulation",
+      "root": "echo"
+    },
+    "malicious": {
+      "type": "sensor",
+      "building-blocks": [
+        "decreased-rank" ] }  } }
